@@ -1,0 +1,10 @@
+.venv
+*.egg-info
+vosk-model-small-fr-*
+*.pyc
+.pytest_cache
+__pycache__
+.vscode
+*.private.env
+.DS_Store
+downloads

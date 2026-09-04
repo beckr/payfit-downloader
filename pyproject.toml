@@ -1,0 +1,16 @@
+[project]
+name = "payfit-downloader"
+version = "0.1.0"
+description = "A Dockerized tool to automatically download payslips from Payfit with 2FA support"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "playwright==1.62.0",
+    "pyotp>=2.9.0",
+    "requests>=2.31.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "autopep8>=2.3.2",
+]
