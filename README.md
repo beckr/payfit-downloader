@@ -1,5 +1,9 @@
 # Payfit Downloader ⬇ 
 
+[![Docker Image Version](https://img.shields.io/docker/v/rphbck/payfit-downloader?sort=semver&logo=docker&label=docker)](https://hub.docker.com/r/rphbck/payfit-downloader)
+[![Docker Pulls](https://img.shields.io/docker/pulls/rphbck/payfit-downloader?logo=docker)](https://hub.docker.com/r/rphbck/payfit-downloader)
+[![Docker Image Size](https://img.shields.io/docker/image-size/rphbck/payfit-downloader?sort=semver&logo=docker)](https://hub.docker.com/r/rphbck/payfit-downloader)
+
 A Dockerized Python tool to automatically sync your payslips from Payfit to a local directory with 2FA/TOTP support.
 
 
