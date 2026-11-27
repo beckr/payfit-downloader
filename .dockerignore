@@ -1,0 +1,9 @@
+.git
+.venv
+.vscode
+.DS_Store
+downloads
+docs
+*.private.env
+.env
+*.har

@@ -109,19 +109,25 @@ Check if you don't know this authenticator [Official website](https://stratumaut
 ## Usage
 
 ### 1. Build the Docker Image
-To build the image locally, run the provided build script:
+To build the image locally (for your machine's architecture), run the provided build script:
 
 ```bash
 ./tools/build.sh
 ```
 
-This builds and pushes (multi-arch) the Docker image `rphbck/payfit-downloader`, tagged with both the project version and `latest`.
+This builds the Docker image `rphbck/payfit-downloader` and loads it into your local Docker, tagged with both the project version and `latest`.
 
-The version is defined only in `pyproject.toml`. To release a new version, bump it with uv (this also updates `uv.lock`) and rebuild:
+To build for `linux/amd64` and `linux/arm64` and publish to Docker Hub:
+
+```bash
+./tools/build.sh --push
+```
+
+The version is defined only in `pyproject.toml`. To release a new version, bump it with uv (this also updates `uv.lock`), then build and push:
 
 ```bash
 uv version --bump patch   # or minor / major, or an explicit version: uv version 0.2.0
-./tools/build.sh
+./tools/build.sh --push
 ```
 
 ### 2. Run the Downloader
