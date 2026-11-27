@@ -111,7 +111,14 @@ To build the image locally, run the provided build script:
 ./tools/build.sh
 ```
 
-This builds the Docker image named `rphbck/payfit-downloader:latest`.
+This builds and pushes (multi-arch) the Docker image `rphbck/payfit-downloader`, tagged with both the project version and `latest`.
+
+The version is defined only in `pyproject.toml`. To release a new version, bump it with uv (this also updates `uv.lock`) and rebuild:
+
+```bash
+uv version --bump patch   # or minor / major, or an explicit version: uv version 0.2.0
+./tools/build.sh
+```
 
 ### 2. Run the Downloader
 To run the synchronization, execute the run script:
