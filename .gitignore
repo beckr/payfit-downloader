@@ -8,3 +8,4 @@ __pycache__
 *.private.env
 .DS_Store
 downloads
+*.har
