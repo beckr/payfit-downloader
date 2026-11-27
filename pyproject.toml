@@ -1,6 +1,6 @@
 [project]
 name = "payfit-downloader"
-version = "0.2.0"
+version = "0.2.1"
 description = "A Dockerized tool to automatically download payslips from Payfit with 2FA support"
 readme = "README.md"
 requires-python = ">=3.11"
